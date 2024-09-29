@@ -34,6 +34,9 @@ Data Constraints:
 
 Dataset Description
 
+The dataset used is the Customer Personality Analysis dataset, sourced from Kaggle:
+Customer Personality Analysis Dataset.
+
 Provided by Dr. Omar Romero-Hernandez, the dataset includes attributes related to customer demographics, buying patterns, and interactions with marketing campaigns:
 
 People Attributes
