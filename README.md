@@ -73,7 +73,8 @@ Project Steps
 	1.	Data Cleaning: Handle missing values, remove discrepancies, and preprocess data to prepare for analysis.
 	2.	Exploratory Data Analysis: Investigate the dataset to uncover initial patterns, characteristics, and potential insights.
 	3.	Data Processing: Normalize data, manage categorical variables through encoding, and prepare data for modeling.
-	4.	Clustering and Classification: Implement clustering to identify customer segments. Future steps will involve classification to predict customer behavior based on identified segments.
+ 	4.	Conclusions: Showcase final conclusions over all insights discovered during the project.
+	5.	Clustering and Classification: Implement clustering to identify customer segments. Future steps will involve classification to predict customer behavior based on identified segments.
 
 Key Questions Addressed
 
