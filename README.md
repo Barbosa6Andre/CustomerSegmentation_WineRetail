@@ -2,6 +2,20 @@ Marketing Campaign Analysis
 
 Project Overview: Customer Personality Analysis
 
+Technologies Used:
+
+	•	Python
+	•	Pandas
+	•	NumPy
+	•	Matplotlib
+	•	Seaborn
+
+How to Run the Project:
+
+	1.	Clone the repository.
+	2.	Install necessary dependencies using requirements.txt.
+	3.	Open the Jupyter notebook and follow the steps outlined for data cleaning and exploratory analysis.
+
 Context
 
 Customer Personality Analysis is a strategic approach used by companies to better understand their customers’ preferences and behaviors. By analyzing customer traits and buying habits, businesses can tailor their products and marketing strategies more effectively to various customer segments.
