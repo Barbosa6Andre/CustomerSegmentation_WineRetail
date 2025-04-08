@@ -1,4 +1,4 @@
-# Customer Segmentation – Wine Retail  
+# Customer Segmentation – Wine Retail 🍷
 **A data analysis and best practices project focused on customer behavior and marketing strategy optimization for a Portuguese wine retailer.**
 
 ---
