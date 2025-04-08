@@ -1,96 +1,114 @@
-Marketing Campaign Analysis
+# Customer Segmentation – Wine Retail  
+**A data analysis and best practices project focused on customer behavior and marketing strategy optimization for a Portuguese wine retailer.**
 
-Project Overview: Customer Personality Analysis
+---
 
-Technologies Used:
+## 📌 Project Overview  
+This project applies **data analysis best practices** to identify customer behavior patterns using transactional and demographic data from a wine store. The goal is to extract actionable insights that can guide future marketing strategies and improve segmentation.
 
-	•	Python
-	•	Pandas
-	•	NumPy
-	•	Matplotlib
-	•	Seaborn
+---
 
-How to Run the Project:
+## 🧠 Key Questions Explored  
+- 💸 How does **income** influence total customer spending?  
+- 👨‍👩‍👧 How do **dependents** (children and teenagers) affect purchase behavior?  
+- 🥩 Which **product categories** contribute most to overall sales?  
+- 🎓 How do **education** and **marital status** influence preferences?  
+- 📣 How effective were past **marketing campaigns**?  
+- 🛒 What are the primary **purchase channels** and what patterns emerge?
 
-	1.	Clone the repository.
-	2.	Install necessary dependencies using requirements.txt.
-	3.	Open the Jupyter notebook and follow the steps outlined for data cleaning and exploratory analysis.
+---
 
-Context
+## 📊 Dataset Description  
+The dataset used in this project is the [Customer Personality Analysis Dataset](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis), originally provided by **Dr. Omar Romero-Hernandez**.  
 
-Customer Personality Analysis is a strategic approach used by companies to better understand their customers’ preferences and behaviors. By analyzing customer traits and buying habits, businesses can tailor their products and marketing strategies more effectively to various customer segments.
+It contains customer-related data from a wine retailer and includes **demographic information**, **purchase history**, **channel preferences**, and **responses to marketing campaigns**.  
 
-Problem Statement
+The data spans several categories:
 
-This project employs unsupervised machine learning techniques to identify common behaviors across different customer segments, focusing on clustering to summarize customer segments and laying the groundwork for future classification of customer types.
+### 🧍 People Attributes
+- `ID`: Unique customer identifier  
+- `Year_Birth`: Customer’s year of birth  
+- `Education`: Highest education level  
+- `Marital_Status`: Marital status (e.g., Married, Single, Together, Widow)  
+- `Income`: Yearly household income  
+- `Kidhome`: Number of children in the household  
+- `Teenhome`: Number of teenagers in the household  
+- `Dt_Customer`: Date of customer enrollment  
+- `Recency`: Days since last purchase (lower = more recent)  
+- `Complain`: 1 if the customer complained in the last 2 years, 0 otherwise  
 
-Hypotheses and Assumptions:
+### 🛍️ Product Spending Attributes
+Spending (in monetary value) over the past 2 years on:
+- `MntWines`: Wine  
+- `MntFruits`: Fruits  
+- `MntMeatProducts`: Meat products  
+- `MntFishProducts`: Fish products  
+- `MntSweetProducts`: Sweets  
+- `MntGoldProds`: Gold products (e.g., jewelry, accessories)
 
-	•	It is hypothesized that households with teens might show similar purchase behaviors to households with children, and that having more dependents might reduce disposable income for other expenditures.
+### 📣 Promotion Attributes
+- `NumDealsPurchases`: Purchases made using a discount  
+- `AcceptedCmp1–5`: Whether the customer accepted campaigns 1 to 5  
+- `Response`: Whether the customer accepted the last campaign  
 
-Data Constraints:
+### 🌐 Place & Channel Attributes
+- `NumWebPurchases`: Purchases through the website  
+- `NumCatalogPurchases`: Purchases via catalog  
+- `NumStorePurchases`: In-store purchases  
+- `NumWebVisitsMonth`: Number of website visits in the last month  
 
-	•	The analysis is constrained by the lack of data on gender identity, detailed campaign strategies, and specific product categories which could enhance customer profiling and product strategy.
+---
 
-Dataset Description
+## 🔄 Project Outline  
 
-The dataset used is the Customer Personality Analysis dataset, sourced from Kaggle:
-Customer Personality Analysis Dataset.
+0. **Setting Up the Coding Environment**  
+   Prepare the necessary Python libraries and set up the data analysis environment.
 
-Provided by Dr. Omar Romero-Hernandez, the dataset includes attributes related to customer demographics, buying patterns, and interactions with marketing campaigns:
+1. **Data Cleaning**  
+   Handle missing values, remove discrepancies, and preprocess data to prepare for analysis.
 
-People Attributes
+2. **Exploratory Data Analysis**  
+   Investigate the dataset to uncover initial patterns, characteristics, and potential insights.
 
-	•	ID: Customer’s unique identifier
-	•	Year_Birth: Customer’s birth year
-	•	Education: Customer’s education level
-	•	Marital_Status: Customer’s marital status
-	•	Income: Customer’s yearly household income
-	•	Kidhome: Number of children in customer’s household
-	•	Teenhome: Number of teenagers in customer’s household
-	•	Dt_Customer: Date of customer’s enrollment with the company
-	•	Recency: Number of days since customer’s last purchase
-	•	Complain: 1 if the customer complained in the last 2 years, 0 otherwise
+3. **Data Processing**  
+   Normalize data, manage categorical variables through encoding, and prepare data for modeling.
 
-Products Attributes
+4. **Conclusions**  
+   Showcase final conclusions over all insights discovered during the project.
 
-	•	MntWines, MntFruits, MntMeatProducts, MntFishProducts, MntSweetProducts, MntGoldProds: Amount spent on respective products in the last 2 years
+5. **Clustering and Classification** *(Future Step)*  
+   Implement clustering to identify customer segments. Future steps will involve classification to predict customer behavior based on identified segments.
 
-Promotion Attributes
+---
 
-	•	NumDealsPurchases: Number of purchases made with a discount
-	•	Accepted Campaigns (1-5): Response to marketing campaigns
-	•	Response: 1 if customer accepted the offer in the last campaign, 0 otherwise
+## 🧰 Technologies Used  
+- `Python`  
+- `Pandas`  
+- `NumPy`  
+- `Matplotlib`  
+- `Seaborn`  
 
-Place Attributes
+---
 
-	•	NumWebPurchases, NumCatalogPurchases, NumStorePurchases: Number of purchases made through respective channels
-	•	NumWebVisitsMonth: Number of visits to company’s website in the last month
+## 📈 Summary Insights  
+- 💰 **Income levels** vary widely, providing opportunities for value-based segmentation  
+- 👶 Households with more dependents tend to spend differently across product categories  
+- 🍷 **Wine** stands out as the most purchased category  
+- ❌ **Low campaign acceptance** rates signal opportunities for strategy adjustment  
+- 🌐 Cross-channel behavior offers insights for future personalized campaigns  
 
-Project Steps
-
-	0.	Setting Up the Coding Environment: Prepare the necessary Python libraries and set up the data analysis environment.
-	1.	Data Cleaning: Handle missing values, remove discrepancies, and preprocess data to prepare for analysis.
-	2.	Exploratory Data Analysis: Investigate the dataset to uncover initial patterns, characteristics, and potential insights.
-	3.	Data Processing: Normalize data, manage categorical variables through encoding, and prepare data for modeling.
- 	4.	Conclusions: Showcase final conclusions over all insights discovered during the project.
-	5.	Clustering and Classification: Implement clustering to identify customer segments. Future steps will involve classification to predict customer behavior based on identified segments.
-
-Key Questions Addressed
-
-	•	Income vs. Total Expense Relationship: Exploring how customer income influences total expenses.
-	•	Impact of Dependents: Analyzing the influence of having children and teenagers at home on total spending.
-	•	Product Sales Importance: Determining the role of each type of product in total sales.
-	•	Influences on Product Purchases: Investigating how education and marital status affect product purchases.
-	•	Marketing Campaign Performance: Evaluating the effectiveness of different marketing campaigns.
-	•	Purchasing Behavior: Examining customer behavior in relation to various types of purchases and web visits.
-
-Initial Data Statistical Summary
-
-	•	Income Variability: Wide range of customer income levels, from $1,730 to an outlier of $666,666.
-	•	Age Utility: Converting Year_Birth to Age would provide more actionable insights.
-	•	Promotional Response: Low acceptance rates for marketing campaigns suggest potential areas for improvement.
+---
 
 Final Remarks
 
 This project leverages data-driven insights to refine marketing strategies and product offerings, aligning them more closely with customer needs and behaviors. The insights derived will be used to inform future analytical efforts, including predictive modeling of customer behavior.
+
+---
+
+## 🧪 How to Run This Project  
+
+1. Clone this repository  
+2. Install dependencies:  
+   ```bash  
+   pip install -r requirements.txt
+   
